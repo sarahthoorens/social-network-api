@@ -26,8 +26,10 @@ module.exports = {
    updateUser(req, res) {
       User.findOneAndUpdate({ _id: req.params.userId }, req.body, {
          new: true,
-         runValidators: true,
+      }).then(() => {
+         res.json({ message: 'User udpated' });
       })
+      .catch((err) => res.status(500).json(err));
    },
    // Delete a User
    deleteUser(req, res) {
@@ -57,21 +59,21 @@ module.exports = {
       .catch((err) => res.json(err));
    }, 
 // Get all friends
-// getFriends(req, res) {
-//    User.findOne({ _id: req.params.userId })
-//       .populate({
-//          path: 'friends',
-//          select: '-__v',
-//       })
-//       .select('-__v')
-//       .then((dbUserData) => {
-//          if (!dbUserData) {
-//             return res.status(404).json({ message: 'No user found with that id' });
-//          }
-//          res.json(dbUserData);
-//       })
-//       .catch((err) => res.json(err));
-// },
+getFriends(req, res) {
+   User.findOne({ _id: req.params.userId })
+      .populate({
+         path: 'friends',
+         select: '-__v',
+      })
+      .select('-__v')
+      .then((dbUserData) => {
+         if (!dbUserData) {
+            return res.status(404).json({ message: 'No user found with that id' });
+         }
+         res.json(dbUserData);
+      })
+      .catch((err) => res.json(err));
+},
 
    //remove friend
    removeFriend(req, res) {
