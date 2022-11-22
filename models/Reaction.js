@@ -15,11 +15,12 @@ const reactionSchema = new Schema({
       required: true,
    },
    createdAt: {
-      type: Date,
+      type: String,
       default: Date.now,
       get: (createdAtVal) => dateFormat(createdAtVal)
    }
-});
+},
+{timestamps: true, updatedAt: true});
 
 // Initialize the Reaction model
 const Reaction = model('reaction', reactionSchema);

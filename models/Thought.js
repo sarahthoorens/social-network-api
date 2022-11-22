@@ -9,7 +9,7 @@ const thoughtSchema = new Schema({
    maxlength: 280
 }, 
   createdAt: {
-      type: Date,
+      type: String,
       default: Date.now,
       get: (createdAtVal) => dateFormat(createdAtVal)
   },
@@ -20,6 +20,9 @@ const thoughtSchema = new Schema({
   reactions: ['reactionSchema'],
 
 },
+
+{timestamps: true, updatedAt: true},
+
 { toJSON: {
       virtuals: true,
     },
