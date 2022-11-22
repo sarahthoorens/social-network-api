@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-// Schema for what makes up a comment
+// Schema for what makes up a thought
 const thoughtSchema = new Schema({
   thoughtText: { 
    type: String,
