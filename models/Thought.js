@@ -13,6 +13,12 @@ const thoughtSchema = new Schema({
       default: Date.now,
       get: (createdAtVal) => dateFormat(createdAtVal)
   },
+
+  updatedAt: {
+      type: String,
+      default: Date.now,
+      get: (updatedAtVal) => dateFormat(updatedAtVal)
+  },
   username: {
       type: String,
       required: true
