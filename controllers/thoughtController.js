@@ -10,10 +10,9 @@ module.exports = {
   getSingleThought(req, res) {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((thought) =>
-        !thought
-          ? res.status(404).json({ message: 'No thought found with that id' })
-          : res.json(thought)
-      )
+       !thought
+       ? res.status(404).json({ message: 'No thought found with that id' })
+        : res.json(thought))
       .catch((err) => res.status(500).json(err));
   },
   // Create a thought
@@ -28,10 +27,8 @@ module.exports = {
       })
       .then((user) =>
         !user
-          ? res
-              .status(404)
-              .json({ message: 'thought created, but no users with this ID' })
-          : res.json({ message: 'thought created' })
+          ? res.status(404).json({ message: 'Thought created, but no users with this ID' })
+          : res.json({ message: 'Thought created' })
       )
       .catch((err) => {
         console.error(err);
@@ -41,7 +38,8 @@ module.exports = {
    Thought.findOneAndUpdate(
      { _id: req.params.thoughtId },
      { $set: req.body },
-     { runValidators: true, new: true }
+     { runValidators: true, 
+      new: true }
    )
      .then((thought) =>
        !thought
@@ -66,9 +64,7 @@ module.exports = {
      )
      .then((user) =>
        !user
-         ? res
-             .status(404)
-             .json({ message: 'Thought created but no user with this id!' })
+         ? res.status(404).json({ message: 'Thought created but no user with this id!' })
          : res.json({ message: 'Thought successfully deleted!' })
      )
      .catch((err) => res.status(500).json(err));
