@@ -2,6 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+**[Walkthrough 1 of 3 (users)](https://drive.google.com/file/d/1yLx7-39E02IFcqxN6ZzkDVp1I6c8cFOe/view)**
+**[Walkthrough 2 of 3 (thoughts)](https://drive.google.com/file/d/1sac7fhMRhuHvtlpUmrJzjU5fK6X5stek/view)**
+**[Walkthrough 3 of 3 (reactions)]()**
+
   **Completion Date:**  11/22/22 <br>
  
   **Technologies used:**  JavaScript, Express.js, Node, MongoDB, Mongoose<br>
