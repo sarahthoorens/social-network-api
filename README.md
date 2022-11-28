@@ -47,8 +47,15 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ```
 
 
-## Usage 
-Users are greeted with a landing page of all blog posts,which indicate name and date of post. Users can sign up, then log in to gain access to detailed posts where they may add comments and create blog entries of their own. 
+## Usage and Installation
+
+Mongoose and MongoDB will need to be installed prior to running the application.
+
+```npm install mongoose express```
+
+Users can access the server by running 
+```node server.js``` in the terminal.
+
 
 ## Insomnia Screenshots
 
@@ -64,7 +71,7 @@ _<div align="center">User object layout w/ thoughts and friends info</div>_
 
 Despite having a less-than-positive experience with routes in a recent Handlebars project, I found the MVC model within the Mongo framework to be much clearer to navigate. There is still some quirkiness with Mongo, especially around the usage of virtuals and model creation, but I found it to be a much more straightforward method of implementation. 
 
-Date formatting was a bit of a challenge, but I found converting the type to String was the best way to get the functionality and output I wanted.
+Date formatting was a bit of a challenge, but I found converting the type to String allowed for some conversion. In hindsight, installing the date-fns npm package for conversion might have been the better route.
 
   ## Tests
 
