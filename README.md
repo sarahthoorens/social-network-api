@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**[Walkthrough 1 of 3 (users)](https://drive.google.com/file/d/1yLx7-39E02IFcqxN6ZzkDVp1I6c8cFOe/view)**
-**[Walkthrough 2 of 3 (thoughts)](https://drive.google.com/file/d/1sac7fhMRhuHvtlpUmrJzjU5fK6X5stek/view)**
-**[Walkthrough 3 of 3 (reactions)]()**
+**[Walkthrough Video](https://drive.google.com/file/d/13_zpK8pwDv1sUA__JHSpY0fLWahxLk0Y/view?usp=sharing)**
+
+[Video 2/2 (this final delete functionality was cut off from original video)](https://drive.google.com/file/d/1MsMrAJzaQMkMMQrBHezTS2n3EZ8Nf62W/view?usp=sharing)
 
   **Completion Date:**  11/22/22 <br>
  
@@ -50,7 +50,15 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Usage 
 Users are greeted with a landing page of all blog posts,which indicate name and date of post. Users can sign up, then log in to gain access to detailed posts where they may add comments and create blog entries of their own. 
 
-## Deployed Screenshots
+## Insomnia Screenshots
+
+![thoughts object layout with reaction](./asset/thoughts.png)
+_<div align="center">Thoughts object layout w/ reaction nested array</div>_
+</br></br>
+![user object layout with friend count](./asset/user.png) 
+_<div align="center">User object layout w/ thoughts and friends info</div>_
+
+
 
   ## Challenges
 
