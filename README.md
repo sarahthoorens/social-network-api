@@ -22,7 +22,7 @@
   <br>
   
   ## Description
-Using MongoDB and Mongoose, I've created the back-end of a social network web app that allows for user creating, input, and interaction between users via "thoughts" and "reactions". Thoughts and reactions are date-stamped and can be updated and deleted as PUT and DELETE operations. Additionally, users have the ability to add and delete other users and store them as Friends. 
+Using MongoDB and Mongoose, I've created the back-end of a social network web app that allows for user creating, input, and interaction between users via "thoughts" and "reactions". Thoughts and reactions are date-stamped and can be updated and deleted. Additionally, users have the ability to add and delete other users and store them as Friends. 
 
 ## User Story
 
