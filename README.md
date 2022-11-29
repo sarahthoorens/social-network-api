@@ -10,7 +10,7 @@
  
   **Technologies used:**  JavaScript, Express.js, Node, MongoDB, Mongoose<br>
 
-  **Project goal:** Build an API for a social network crud app where users can share thoughts react to friends' thoughts and create a friend list. <br>
+  **Project goal:** Build an API for a social network crud app where users can share thoughts, react to friends' thoughts and create a friend list. <br>
 
 
   ## Table of Contents
